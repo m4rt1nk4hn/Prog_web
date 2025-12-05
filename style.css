@@ -23,6 +23,10 @@ div {
     background-color: brown;
 } /**Coins arrondis pour les div*/
 
+#reponses {
+    flex-direction: row;
+    
+}
 
 #presentation {
     grid-area: 2 / 1 / 2 / 5;
@@ -43,9 +47,10 @@ div {
 } /**toujours grid-area : grid-row-start, grid-column-start, grid-row-end et grid-column-end (gauche haut droite bas)**/
 
 #blabla {
-    grid-area: 2 / 3 / 3 / 3; /**la ligne en dessous de la nav-haut, la colonne après la nav-gauche. on pourra changer le reste pour prendre plus de place à droite si besoin**/
+    grid-area: 1 / 2 / 5 / 4; /**la ligne en dessous de la nav-haut, la colonne après la nav-gauche. on pourra changer le reste pour prendre plus de place à droite si besoin**/
     text-align: center;
     background-color: antiquewhite;
+    display: flex;
 }
 
 .nav-gauche {
