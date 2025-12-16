@@ -10,7 +10,7 @@ main {
     /**grid-template-columns: 1fr 4fr;**/
     grid-template-columns: 2fr 1fr 2fr 2fr;
     grid-template-rows: 1fr 1fr 3fr 3fr;
-    height:350vh;
+    height:80vh;
 } /**Definition des grilles de la page : 4 colonnes et 4 lignes.
 pour les colonnes : une colonne + petite pour la navigation gauche
 Pour les lignes : à gauche + petit pour que la navigation gauche ne mange pas toute la place
@@ -18,17 +18,11 @@ le height c'est pour que le site prenne toute la taille de l'écran. sinon, la p
 **/
 
 div {
-    display: flex;
-	flex-direction: column ;
-	align-items: center;
-	gap: 20px;
-    background-color:brown;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: brown;
 } /**Coins arrondis pour les div*/
 
-#reponses {
-    flex-direction: row;
-    
-}
 
 #presentation {
     grid-area: 2 / 1 / 2 / 5;
@@ -37,36 +31,47 @@ div {
 } /**Pour l'en-tête de la page**/
 
 .nav-gauche > div {
-    background-color: pink;
+    background-color: green;
 } /**on pourra changer les couleurs... ici c'est juste pour différencier les divs de gauche des autres**/
 
-.nav-haut div.haut {
-    front-size: 24px;
-	front-weight: bold;
-	color: black;
-	background-color: #e2a9f1;
-	padding: 20px;
-	text-align: center;
-	margin: 0;
-	
+.nav-haut {
+    display: grid;
+    background-color: aqua;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-area: 2 / 1 / 4 / 1;
 } /**toujours grid-area : grid-row-start, grid-column-start, grid-row-end et grid-column-end (gauche haut droite bas)**/
 
+.nav-gauche {
+    background-color: blueviolet;
+    grid-area: 1 / 1 / 5 / 2;
+    text-align: center;
+}
+
 #blabla {
-    grid-area: 1 / 2 / 5 / 4; /**la ligne en dessous de la nav-haut, la colonne après la nav-gauche. on pourra changer le reste pour prendre plus de place à droite si besoin**/
+    grid-area: 1 / 2 / 5 / 5; /**la ligne en dessous de la nav-haut, la colonne après la nav-gauche. on pourra changer le reste pour prendre plus de place à droite si besoin**/
     text-align: center;
     background-color: antiquewhite;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.nav-gauche {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width:250px;
-  background-color: #9b59b6;
-  color:white;
-  padding: 15px;
-  height: 100vh;
-  z-index: 100;
-  
+#rebus {
+    justify-content: space-around;
+    align-items: center;
 }
+
+#reponses {
+    flex-direction: column;
+    text-align: center;
+}
+
+img {
+    width: max(15vw);
+    height: max(10vw);
+    /**Pour avoir des images de tailles identiques**/
+}
+
+
