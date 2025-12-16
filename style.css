@@ -10,7 +10,7 @@ main {
     /**grid-template-columns: 1fr 4fr;**/
     grid-template-columns: 2fr 1fr 2fr 2fr;
     grid-template-rows: 1fr 1fr 3fr 3fr;
-    height:80vh;
+    height:350vh;
 } /**Definition des grilles de la page : 4 colonnes et 4 lignes.
 pour les colonnes : une colonne + petite pour la navigation gauche
 Pour les lignes : à gauche + petit pour que la navigation gauche ne mange pas toute la place
@@ -18,9 +18,11 @@ le height c'est pour que le site prenne toute la taille de l'écran. sinon, la p
 **/
 
 div {
-    border-radius: 15px;
-    padding: 10px;
-    background-color: brown;
+    display: flex;
+	flex-direction: column ;
+	align-items: center;
+	gap: 20px;
+    background-color:brown;
 } /**Coins arrondis pour les div*/
 
 #reponses {
@@ -35,15 +37,18 @@ div {
 } /**Pour l'en-tête de la page**/
 
 .nav-gauche > div {
-    background-color: green;
+    background-color: pink;
 } /**on pourra changer les couleurs... ici c'est juste pour différencier les divs de gauche des autres**/
 
-.nav-haut {
-    display: grid;
-    background-color: aqua;
-    grid-template-rows: 1fr 2fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-area: 2 / 1 / 4 / 1;
+.nav-haut div.haut {
+    front-size: 24px;
+	front-weight: bold;
+	color: black;
+	background-color: #e2a9f1;
+	padding: 20px;
+	text-align: center;
+	margin: 0;
+	
 } /**toujours grid-area : grid-row-start, grid-column-start, grid-row-end et grid-column-end (gauche haut droite bas)**/
 
 #blabla {
@@ -54,7 +59,14 @@ div {
 }
 
 .nav-gauche {
-    background-color: blueviolet;
-    grid-area: 1 / 1 / 5 / 2;
-    text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width:250px;
+  background-color: #9b59b6;
+  color:white;
+  padding: 15px;
+  height: 100vh;
+  z-index: 100;
+  
 }
