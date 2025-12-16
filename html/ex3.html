@@ -2,32 +2,31 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Apprendre le français</title>
+        <title> Les sons</title>
         <link rel="stylesheet" href="../style.css">
     </head>
     <body>
         <header>
             <!-- Le header sera en haut de la page (et restera quand on déroulera la page ?) -->
              <nav class="nav-haut">
-                <div class="haut">Accueil</div>
-                <div class="haut">Orthographe</div>
-                <div class="haut">Grammaire</div>
-                <div class="haut">Images</div>
-                <div class="haut">etc.</div>
-                <div id="presentation">Bienvenue sur le meilleur site pour apprendre le français !</div>
+                <div class="haut"> C'est parti pour l'écoute !</div>
+                
              </nav>
         </header>
         <main>
             <div id="blabla">
-                <p>Les sons<br/></p>
-                <p>Trouve le nombre de sons dans l'audio</p>
+                <p> Trouve le nombre de battements dans l'audio ! </p>
 				<br/>
 				<br/>
+			<div>
+			
 				<figure>
 					  <figcaption>Ecoute:</figcaption>
-					  <audio controls src="/shared-assets/audio/t-rex-roar.mp3"></audio><!--changer le son-->
-				</figure>
-				<label for="select"> Séléctionne un nombre</label>
+					 <audio controls>
+					  <source src="../son/son_01_faon.mp3" type="audio/mpeg"></audio>
+					</audio>
+			<div class="battement" data-correct="1">
+				</figure>Nombre de battements est :  </label>
 				<select name="nombre" id="nombre">
 					<option value=""></option>
 					<option value="1">1</option>
@@ -35,16 +34,19 @@
 					<option value="3">3</option>
 					<option value="4">4</option>
 					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
+					
 				</select>
+				<p class="resultat"></p>
+			</div>
+			<br/>
+			<div class="battement" data-correct="1">
 				<figure>
 					  <figcaption>Ecoute:</figcaption>
-					  <audio controls src="/shared-assets/audio/t-rex-roar.mp3"></audio><!--changer le son-->
+					  <audio controls>
+					  <source src="../son/son_02_phare.mp3" type="audio/mpeg"></audio>
+					</audio>
 				</figure>
-				<label for="select"> Séléctionne un nombre</label>
+				<label for="select"> Nombre de battements est :</label>
 				<select name="nombre" id="nombre">
 					<option value=""></option>
 					<option value="1">1</option>
@@ -52,16 +54,19 @@
 					<option value="3">3</option>
 					<option value="4">4</option>
 					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
+					
 				</select>
+			</div>
+			<br/>
+			<div class="battement" data-correct="2">
 				<figure>
 					  <figcaption>Ecoute:</figcaption>
-					  <audio controls src="/shared-assets/audio/t-rex-roar.mp3"></audio><!--changer le son-->
+					  <audio controls>
+					  <source src="../son/son_03_fanfare.mp3" type="audio/mpeg"></audio>
+					</audio>
+			
 				</figure>
-				<label for="select"> Séléctionne un nombre</label>
+				<label for="select"> Nombre de battements est :</label>
 				<select name="nombre" id="nombre">
 					<option value=""></option>
 					<option value="1">1</option>
@@ -69,17 +74,178 @@
 					<option value="3">3</option>
 					<option value="4">4</option>
 					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-					<option value="9">9</option>
+				
 				</select>
-
-
             </div>
+			<br/>
+			<div class="battement" data-correct="1">
+				<figure>
+					  <figcaption>Ecoute:</figcaption>
+					  <audio controls>
+					  <source src="../son/son_04_mat.mp3" type="audio/mpeg"></audio>
+					</audio>
 			
+				</figure>
+				<label for="select"> Nombre de battements est :</label>
+				<select name="nombre" id="nombre">
+					<option value=""></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					
+				</select>
+            </div>
+			</br>
+			<div class="battement" data-correct="1">
+				<figure>
+					  <figcaption>Ecoute:</figcaption>
+					 <audio controls>
+					  <source src="../son/son_05_scie.mp3" type="audio/mpeg"></audio>
+					</audio>
 			
+				</figure>
+				<label for="select"> Nombre de battements est :</label>
+				<select name="nombre" id="nombre">
+					<option value=""></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					
+				</select>
+            </div>
+			</br>
+		    <div class="battement" data-correct="3">
+				<figure>
+					  <figcaption>Ecoute:</figcaption>
+					  <audio controls>
+					  <source src="../son/son_06_pharmacie.mp3" type="audio/mpeg"></audio>
+					</audio>
 			
+				</figure>
+				<label for="select"> Nombre de battements est :</label>
+				<select name="nombre" id="nombre">
+					<option value=""></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					
+				</select>
+            </div>
+			</br>
+			<div class="battement" data-correct="1">
+				<figure>
+					  <figcaption>Ecoute:</figcaption>
+					  <audio controls>
+					  <source src="../son/son_07_des.mp3" type="audio/mpeg"></audio>
+					</audio>
+			
+				</figure>
+				<label for="select"> Nombre de battements est :</label>
+				<select name="nombre" id="nombre">
+					<option value=""></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					
+				</select>
+            </div>
+			</br>
+				<div class="battement" data-correct="1">
+				<figure>
+						<figcaption>Ecoute:</figcaption>
+					<audio controls>
+					  <source src="../son/son_08_pas.mp3" type="audio/mpeg"></audio>
+					</audio>
+				</figure>
+				<label for="select"> Nombre de battements est :</label>
+				<select name="nombre" id="nombre">
+					<option value=""></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				
+				</select>
+            </div>
+			</br>
+				<div class="battement" data-correct="1">
+				<figure>
+						<figcaption>Ecoute:</figcaption>
+					<audio controls>
+					  <source src="../son/son_09_nez.mp3" type="audio/mpeg"></audio>
+					</audio>
+				</figure>
+				<label for="select"> Nombre de battements est :</label>
+				<select name="nombre" id="nombre">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					
+				</select>
+            </div>
+			</br>
+			<div class="battement" data-correct="1">
+				<figure>
+						<figcaption>Ecoute:</figcaption>
+					<audio controls>
+					  <source src="../son/son_10_dépanner.mp3" type="audio/mpeg"></audio>
+					</audio>
+				</figure>
+				<label for="select"> Nombre de battements est :</label>
+				<select name="nombre" id="nombre">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					
+				</select>
+            </div>
+			<div class="battement" data-correct="1">
+				<figure>
+						<figcaption>Ecoute:</figcaption>
+					<audio controls>
+					  <source src="../son/son_12_hotte.mp3" type="audio/mpeg"></audio>
+					</audio>
+				</figure>
+				<label for="select"> Nombre de battements est :</label>
+				<select name="nombre" id="nombre">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					
+				</select>
+            </div>
+			<div class="battement" data-correct="1">
+				<figure>
+						<figcaption>Ecoute:</figcaption>
+					<audio controls>
+					  <source src="../son/son_13_carotte.mp3" type="audio/mpeg"></audio>
+					</audio>
+				</figure>
+				<label for="select"> Nombre de battements est :</label>
+				<select name="nombre" id="nombre">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					
+				</select>
+            </div>
             <nav class="nav-gauche">
             <!-- Je verrai bien un menu à gauche pour naviguer... -->
                 <div class="categories"><a href="exercices/mot-son.html">Trouver le mot correspondant au son</a></div><br/><br/>
@@ -90,4 +256,5 @@
             </nav>
         </main>
     </body>
+	    <script src="../js/ex3.js"></script>
 </html>
