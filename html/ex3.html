@@ -8,9 +8,12 @@
     <body>
         <header>
             <!-- Le header sera en haut de la page (et restera quand on déroulera la page ?) -->
-             <nav class="nav-haut">
-                <div class="haut"> C'est parti pour l'écoute !</div>
-                
+            <nav class="nav-haut">
+                <div class="haut">Rébus</div>
+                <div class="haut">Syllabes</div>
+                <div class="haut">Sons</div>
+                <div class="haut">Images</div>
+                <div id="presentation">Bienvenue sur le meilleur site pour apprendre le français !</div>
              </nav>
         </header>
         <main>
@@ -18,12 +21,12 @@
                 <p> Trouve le nombre de battements dans l'audio ! </p>
 				<br/>
 				<br/>
+				<div>
 				<figure>
 					  <figcaption>Ecoute:</figcaption>
 					 <audio controls>
 					  <source src="../son/son_01_faon.mp3" type="audio/mpeg"></audio>
 					</audio>
-			<div class="battement" data-correct="1">
 				</figure>Nombre de battements est :  </label>
 				<select name="nombre" id="nombre">
 					<option value=""></option>
@@ -34,10 +37,9 @@
 					<option value="5">5</option>
 					
 				</select>
-				<p class="resultat"></p>
-			</div>
-			<br/>
-			<div class="battement" data-correct="1">
+				</div>
+			   <br/>
+			<div>
 				<figure>
 					  <figcaption>Ecoute:</figcaption>
 					  <audio controls>
@@ -55,14 +57,13 @@
 					
 				</select>
 			</div>
-			<br/>
-			<div class="battement" data-correct="2">
-				<figure>
+			  <br/>
+				<div>
+					<figure>
 					  <figcaption>Ecoute:</figcaption>
-					  <audio controls>
+					 <audio controls>
 					  <source src="../son/son_03_fanfare.mp3" type="audio/mpeg"></audio>
 					</audio>
-			
 				</figure>
 				<label for="select"> Nombre de battements est :</label>
 				<select name="nombre" id="nombre">
@@ -74,9 +75,9 @@
 					<option value="5">5</option>
 				
 				</select>
-            </div>
+				</div>
 			<br/>
-			<div class="battement" data-correct="1">
+				<div>
 				<figure>
 					  <figcaption>Ecoute:</figcaption>
 					  <audio controls>
@@ -94,12 +95,12 @@
 					<option value="5">5</option>
 					
 				</select>
-            </div>
+				</div>
 			</br>
-			<div class="battement" data-correct="1">
+				<div>
 				<figure>
 					  <figcaption>Ecoute:</figcaption>
-					 <audio controls>
+					<audio controls>
 					  <source src="../son/son_05_scie.mp3" type="audio/mpeg"></audio>
 					</audio>
 			
@@ -114,12 +115,12 @@
 					<option value="5">5</option>
 					
 				</select>
-            </div>
+				</div>
 			</br>
-		    <div class="battement" data-correct="3">
+				<div>
 				<figure>
 					  <figcaption>Ecoute:</figcaption>
-					  <audio controls>
+					<audio controls>
 					  <source src="../son/son_06_pharmacie.mp3" type="audio/mpeg"></audio>
 					</audio>
 			
@@ -134,12 +135,12 @@
 					<option value="5">5</option>
 					
 				</select>
-            </div>
+				</div>
 			</br>
-			<div class="battement" data-correct="1">
+				<div>
 				<figure>
 					  <figcaption>Ecoute:</figcaption>
-					  <audio controls>
+					<audio controls>
 					  <source src="../son/son_07_des.mp3" type="audio/mpeg"></audio>
 					</audio>
 			
@@ -154,13 +155,13 @@
 					<option value="5">5</option>
 					
 				</select>
-            </div>
+				</div>
 			</br>
-				<div class="battement" data-correct="1">
+				<div>
 				<figure>
 						<figcaption>Ecoute:</figcaption>
 					<audio controls>
-					  <source src="../son/son_08_pas.mp3" type="audio/mpeg"></audio>
+						<source src="../son/son_08_pas.mp3" type="audio/mpeg"></audio>
 					</audio>
 				</figure>
 				<label for="select"> Nombre de battements est :</label>
@@ -173,9 +174,9 @@
 					<option value="5">5</option>
 				
 				</select>
-            </div>
+				</div>
 			</br>
-				<div class="battement" data-correct="1">
+				<div>
 				<figure>
 						<figcaption>Ecoute:</figcaption>
 					<audio controls>
@@ -191,9 +192,9 @@
 					<option value="5">5</option>
 					
 				</select>
-            </div>
+				</div>
 			</br>
-			<div class="battement" data-correct="1">
+				<div>
 				<figure>
 						<figcaption>Ecoute:</figcaption>
 					<audio controls>
@@ -209,8 +210,9 @@
 					<option value="5">5</option>
 					
 				</select>
-            </div>
-			<div class="battement" data-correct="1">
+				</div>
+			</br>
+				<div>
 				<figure>
 						<figcaption>Ecoute:</figcaption>
 					<audio controls>
@@ -226,8 +228,9 @@
 					<option value="5">5</option>
 					
 				</select>
-            </div>
-			<div class="battement" data-correct="1">
+				</div>
+				</br>
+				<div>
 				<figure>
 						<figcaption>Ecoute:</figcaption>
 					<audio controls>
@@ -243,19 +246,23 @@
 					<option value="5">5</option>
 					
 				</select>
-            </div>
-			<div>
+				</div>
+				<br/></br>
+				<button id="validate">Clique ici quand tu as terminé</button>
+				</br>
+				<p id="page_suivante"><a href="ex4.html">Bravo! Clique ici pour le prochain exercice !</a></p>
+			</div>
 			
 				
-            <nav class="nav-gauche">
+             <nav class="nav-gauche">
             <!-- Je verrai bien un menu à gauche pour naviguer... -->
-                <div class="categories"><a href="exercices/mot-son.html">Trouver le mot correspondant au son</a></div><br/><br/>
-                <div class="categories"><a href="exercices/mot-img.html">Écrire le mot correspondant à l'image</a></div><br/><br/>
-                <div class="categories"><a href="exercices/mot-orthographe.html">Choisir la bonne orthographe pour le mot</a></div><br/><br/>
-                <div class="categories">etc.</div>
+                <div class="categories"><a href="ex1.html">Apprends ce qu'est un rébus ici </a></div><br/><br/>
+                <div class="categories"><a href="ex2.html">Encore plus de rébus !</a></div><br/><br/>
+                <div class="categories"><a href="ex3.html">Apprends à reconnaitre les syllabes</a></div><br/><br/>
+                <div class="categories"><a href="ex4.html">Joue avec les permutations</a></div><br/><br/>
             <div></div>
             </nav>
-        </main>
+			</main>
     </body>
-	    <script src="../js/ex3.js"></script>
+	<script src="../js/ex3.js"></script>
 </html>
