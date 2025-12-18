@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 const question1_phare = document.getElementById("question1_phare");
 const question1_nez = document.getElementById("question1_nez");
 const question1_faon = document.getElementById("question1_faon");
@@ -21,7 +22,7 @@ lien.style.visibility="hidden";
 
 let nb_bonnes_reponses= 0;
 
-//question 1
+//bonnes réponses
 question1_phare.addEventListener("change", () => {
 	if(question1_phare.checked){
 		nb_bonnes_reponses = nb_bonnes_reponses + 1; 
@@ -31,12 +32,6 @@ question1_phare.addEventListener("change", () => {
 // si la réponse est bonne on incrémente
 // empèche de décocher la case
 	
-question1_nez.addEventListener("change", () => {
-	if(question1_nez.checked){
-		question1_nez.disabled = true;
-	}
-});
-
 
 question1_faon.addEventListener("change", () => {
 	if(question1_faon.checked){
@@ -45,13 +40,6 @@ question1_faon.addEventListener("change", () => {
 	}
 });
 
-question1_hotte.addEventListener("change", () => {
-	if(question1_hotte.checked){
-		question1_hotte.disabled = true;
-	}
-});
-
-//question 2
 question2_des.addEventListener("change", () => {
 	if(question2_des.checked){
 		nb_bonnes_reponses = nb_bonnes_reponses + 1;
@@ -66,11 +54,6 @@ question2_pas.addEventListener("change", () => {
 	}
 });
 
-question2_mat.addEventListener("change", () => {
-	if(question2_mat.checked){
-		question2_mat.disabled = true;
-	}
-});
 		
 question2_nez.addEventListener("change", () => {
 	if(question2_nez.checked){
@@ -79,7 +62,6 @@ question2_nez.addEventListener("change", () => {
 	}
 });
 
-//question 3
 question3_phare.addEventListener("change", () => {
 	if(question3_phare.checked){
 		nb_bonnes_reponses = nb_bonnes_reponses + 1;
@@ -87,12 +69,7 @@ question3_phare.addEventListener("change", () => {
 	}
 });
 
-question3_faon.addEventListener("change", () => {
-	if(question3_faon.checked){
-		nb_bonnes_reponses = nb_bonnes_reponses + 1;
-		question3_faon.disabled = true;
-	}	
-});
+
 
 question3_mat.addEventListener("change", () => {
 	if(question3_mat.checked){
@@ -107,6 +84,32 @@ question3_scie.addEventListener("change", () => {
 		question3_scie.disabled = true;
 	}
 });
+
+//mauvaises réponses
+question1_nez.addEventListener("change", () => {
+	if(question1_nez.checked){
+		question1_nez.disabled = true;
+	}
+});
+
+question1_hotte.addEventListener("change", () => {
+	if(question1_hotte.checked){
+		question1_hotte.disabled = true;
+	}
+});
+
+question2_mat.addEventListener("change", () => {
+	if(question2_mat.checked){
+		question2_mat.disabled = true;
+	}
+});
+
+question3_faon.addEventListener("change", () => {
+	if(question3_faon.checked){
+		question3_faon.disabled = true;
+	}	
+});
+
 
 bouton_fini.addEventListener("click", () => {
 	if (nb_bonnes_reponses == 8) {
@@ -155,4 +158,6 @@ bouton_fini.addEventListener("click", () => {
 	question3_mat.disabled = false;
 
 	}
+});
+
 });
