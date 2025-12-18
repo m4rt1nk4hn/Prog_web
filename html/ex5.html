@@ -7,45 +7,50 @@
     </head>
     <body>
         <header>
-            <!-- Le header sera en haut de la page (et restera quand on déroulera la page ?) -->
+            <!-- Le header sera en haut de la page-->
              <nav class="nav-haut">
+				<div class="haut"><a href="../index.html">Accueil</a></div>
                 <div class="haut">Rébus</div>
                 <div class="haut">Syllabes</div>
                 <div class="haut">Sons</div>
                 <div class="haut">Images</div>
                 <div id="presentation">Bienvenue sur le site pour apprendre le français pas comme les autres!</div>
+				
              </nav>
         </header>
         <main>
             <div id="blabla">
                 <p>Les rebus <br /></p>
-                <p>Le but ici est de retrouver les sons correspondants aux rebus.</p>
+                <p>Le but ici est de retrouver les sons présent dans le mot.</p>
 				<br/>
-				
-				<p>Reconstruis le mot à l'aide des sons</p>
+		<!-- Première question -->
+				<p>Trouve les sons présents dans le mot.</p>
 				<img class="rebus" src="../images/image_12_fanfare_cle.jpg" alt="fanfare">
 				<br/>
 				<span class="reponses">
+		<!-- indiquation du numéro qui correspond à l'audio pour l'exercice-->
 					<span>n°1</span>
 						<audio controls>
 							<source src="../son/son_02_phare.mp3" type="audio/mpeg">
 						</audio>
-						
+					<br/>
 					<span>n°2</span>
 						<audio controls>
 							<source src="../son/son_09_nez.mp3" type="audio/mpeg">
 						</audio>
-						
+					<br/>	
 					<span>n°3</span>
 						<audio controls>
 							<source src="../son/son_01_faon.mp3" type="audio/mpeg">
 						</audio>
-						
+					<br/>	
 					<span>n°4</span>
 						<audio controls>
 							<source src="../son/son_12_hotte.mp3" type="audio/mpeg">
 						</audio>
+					<br/>
 				</span>
+		<!-- mis en place de checkbox avec des id pour pouvoir récuperer les réponses-->
 				<span class="reponses">
 					<label><input type="checkbox" id="question1_phare"> Son n°1</label><br/>
 					<label><input type="checkbox" id="question1_nez"> Son n°2</label><br/>
@@ -53,7 +58,8 @@
 					<label><input type="checkbox" id="question1_hotte">Son n°4</label><br/>
 				</span>	
 				<br/><br/><br/><br/><br/>
-				<p>Reconstruis le mot à l'aide des sons</p>
+		<!--Deuxième question-->
+				<p>Trouve les sons présents dans le mot.</p>
 				<img class="rebus" src="../images/image_15_depanner_cle.jpg" alt="depanner">
 				<br/>
 				<span class="reponses">
@@ -62,22 +68,24 @@
 						<audio controls>
 							<source src="../son/son_07_des.mp3" type="audio/mpeg">
 						</audio>
-						
+					<br/>
 					<span>n°2</span>
 						<audio controls>
 							<source src="../son/son_08_pas.mp3" type="audio/mpeg">
 						</audio>
-						
+					<br/>	
 					<span>n°3</span>
 						<audio controls>
 							<source src="../son/son_04_mat.mp3" type="audio/mpeg">
 						</audio>
-						
+					<br/>	
 					<span>n°4</span>
 						<audio controls>
 							<source src="../son/son_09_nez.mp3" type="audio/mpeg">
 						</audio>
+					<br/>
 				</span>
+		<!--Checkbox pour les réponses -->
 				<span class="reponses">
 					<label><input type="checkbox" id="question2_des"> Son n°1</label><br/>
 					<label><input type="checkbox" id="question2_pas"> Son n°2</label><br/>
@@ -85,7 +93,8 @@
 					<label><input type="checkbox" id="question2_nez">Son n°4</label><br/>
 				</span>	
 				<br/><br/><br/><br/><br/>
-				<p>Reconstruis le mot à l'aide des sons</p>
+		<!--Troisième questions-->
+				<p>Trouve les sons présents dans le mot.</p>
 				<img class="rebus" src="../images/image_11_pharmacie_cle.jpg" alt="carotte">
 
 				<br/>
@@ -95,22 +104,24 @@
 						<audio controls>
 							<source src="../son/son_02_phare.mp3" type="audio/mpeg">
 						</audio>
-						
+					<br/>	
 					<span>n°2</span>
 						<audio controls>
 							<source src="../son/son_01_faon.mp3" type="audio/mpeg">
 						</audio>
-											
+					<br/>						
 					<span>n°3</span>
 						<audio controls>
 							<source src="../son/son_05_scie.mp3" type="audio/mpeg">
 						</audio>
-								
+					<br/>			
 					<span>n°4</span>
 						<audio controls>
 							<source src="../son/son_04_mat.mp3" type="audio/mpeg">
 						</audio>	
+					<br/>
 				</span>
+		<!--checkbox pour les réponses-->
 				<span class="reponses">
 					<label><input type="checkbox" id="question3_phare"> Son n°1</label><br/>
 					<label><input type="checkbox" id="question3_faon"> Son n°2</label><br/>
@@ -119,18 +130,20 @@
 				</span>	
 				<br/><br/><br/><br/><br/>
 				<button id="bouton_fini" type="button">Terminer</button>
-				<a id="page_suivante" href="exercice_suivant.html" style="visibility: hidden;">Exercice suivant</a>
-
+				<a id="page_suivante" href="index.html" style="visibility: hidden;">Page d'accueil</a>
+				<!-- lien qui apparait si l'exercice est correctement effectuer-->
             </div>
 			
 			
 			
             <nav class="nav-gauche">
-            <!-- Je verrai bien un menu à gauche pour naviguer... -->
+            <!-- Menu à gauche pour naviguer sur le site -->
                 <div class="categories"><a href="ex1.html">Apprends ce qu'est un rébus ici </a></div><br/><br/>
                 <div class="categories"><a href="ex2.html">Encore plus de rébus !</a></div><br/><br/>
                 <div class="categories"><a href="ex3.html">Apprends à reconnaitre les syllabes</a></div><br/><br/>
                 <div class="categories"><a href="ex4.html">Joue avec les permutations</a></div><br/><br/>
+				<div class="categories"><a href="ex5.html">	Identifie les sons du mot</a></div><br/><br/>
+
             <div></div>
             </nav>
         </main>
