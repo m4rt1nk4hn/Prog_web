@@ -4,7 +4,7 @@ lien.style.visibility="hidden";
 
 valide.addEventListener("click", () => {
    var reponses = document.getElementsByName("nombre"); // tableau des reponses de l'utilisateur
-   const reponses_correctes = ["1","1","2","1","1","3" ,"3","2"];
+   const reponses_correctes = ["1","1","2","1","1","3" ,"1","1","1","3","1","2"];
    // un tableau pour mettre les réponses données par l'utilisateur, et réponses correctes 
    let score = 0;
    var mauvaisesReponses = [];
